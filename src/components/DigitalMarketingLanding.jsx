@@ -50,7 +50,7 @@ const DigitalMarketingLanding = () => {
             className="text-3xl mb-2 text-[#5d545e]"
             style={{ fontFamily: "Satoshi-Black" }}
           >
-            Harshit Dawar
+
           </h1>
           <h2
             className="text-xl mb-8 text-[#5d545e]"
