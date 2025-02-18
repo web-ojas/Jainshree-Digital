@@ -93,6 +93,14 @@ const ServicesSection = () => {
           </div>
         ))}
       </div>
+      <div className="mt-12 text-center text-yellow-700 font-semibold">
+        📍{" "}
+        <strong>
+          Yogesh Shakya – Your Trusted MP Online Service Provider!
+        </strong>{" "}
+        <br />
+        Get your work done smoothly and hassle-free. Contact now! 📞
+      </div>
     </div>
   );
 };
