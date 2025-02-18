@@ -7,25 +7,27 @@ import {
   faGlobe,
   faShare,
 } from "@fortawesome/free-solid-svg-icons";
+import ServicesSection from "./ServiceSection";
+
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 
 const DigitalMarketingLanding = () => {
   const [showQR, setShowQR] = useState(false);
 
   const handleCall = () => {
-    window.location.href = "tel:+919826050902";
+    window.location.href = "tel:+919009103322";
   };
 
   const handleWhatsApp = () => {
-    window.location.href = "https://wa.me/919826050902";
+    window.location.href = "https://wa.me/9009103322";
   };
 
   const handleEmail = () => {
-    window.location.href = "mailto:info@parallelpanda.in";
+    window.location.href = "";
   };
 
   const handleMap = () => {
-    window.location.href = "https://maps.app.goo.gl/Z9zZvvBg4dVzkMrv7";
+    window.location.href = "https://maps.app.goo.gl/mYBdug733Ue9NRzo9";
   };
 
   const handleWebsite = () => {
@@ -49,14 +51,12 @@ const DigitalMarketingLanding = () => {
           <h1
             className="text-3xl mb-2 text-[#5d545e]"
             style={{ fontFamily: "Satoshi-Black" }}
-          >
-
-          </h1>
+          ></h1>
           <h2
             className="text-xl mb-8 text-[#5d545e]"
             style={{ fontFamily: "Satoshi-Medium" }}
           >
-            Digital Marketing Agency
+            Jainshree Digital
           </h2>
         </div>
       </div>
@@ -98,15 +98,12 @@ const DigitalMarketingLanding = () => {
                 className="w-5 h-5 text-[#5d545e]"
               />
             </button>
-            <button
-              onClick={handleEmail}
-              className="bg-[#fff6d6] p-4 rounded-full hover:bg-opacity-90 w-12 h-12 flex items-center justify-center"
-            >
+            {/* <button className="bg-[#fff6d6] p-4 rounded-full hover:bg-opacity-90 w-12 h-12 flex items-center justify-center">
               <FontAwesomeIcon
                 icon={faEnvelope}
                 className="w-5 h-5 text-[#5d545e]"
               />
-            </button>
+            </button> */}
             <button
               onClick={handleMap}
               className="bg-[#d6e6ff] p-4 rounded-full hover:bg-opacity-90 w-12 h-12 flex items-center justify-center"
@@ -116,25 +113,25 @@ const DigitalMarketingLanding = () => {
                 className="w-5 h-5 text-[#5d545e]"
               />
             </button>
-            <button
-              onClick={handleWebsite}
+            {/* <button
+              // onClick={handleWebsite}
               className="bg-[#f5d6ff] p-4 rounded-full hover:bg-opacity-90 w-12 h-12 flex items-center justify-center"
             >
               <FontAwesomeIcon
                 icon={faGlobe}
                 className="w-5 h-5 text-[#5d545e]"
               />
-            </button>
+            </button> */}
           </div>
 
           <div className="text-center mt-8">
-            <button
+            {/* <button
               onClick={() => setShowQR(!showQR)}
               className="bg-[#ffe461] px-6 py-3 rounded-lg hover:bg-opacity-90 text-[#5d545e]"
               style={{ fontFamily: "Satoshi-Medium" }}
             >
               Scan QR Code
-            </button>
+            </button> */}
             {showQR && (
               <div className="mt-4">
                 <img
@@ -164,15 +161,15 @@ const DigitalMarketingLanding = () => {
             className="text-lg leading-relaxed text-[#5d545e]"
             style={{ fontFamily: "Satoshi-Regular" }}
           >
-            A <strong>digital marketing engine</strong> fueled by{" "}
-            <strong>27 years of mastery</strong>. From driving{" "}
-            <em>targeted leads</em> through Google and Meta ads to igniting
-            connections via email and WhatsApp marketing, we deliver a full
-            suite of tailored solutions. With{" "}
-            <strong>bespoke SEO strategies</strong> and a commitment to
-            transparency, we guarantee growth without the guesswork. Let us
-            handle the complexity while you focus on what matters most—
-            <strong>elevating your business</strong>.
+            <strong >
+              Yogesh Shakya
+            </strong>
+            , your one-stop solution for all <em/>
+            <strong>MP Online services</strong>! From{" "}
+            <strong>government documents</strong> to business registrations,
+            exam forms, and <strong>essential licenses</strong>—get everything
+            done quickly and hassle-free. <strong>Trusted service</strong> with
+            the <strong>ease you deserve!</strong>
           </p>
         </div>
       </div>
@@ -184,7 +181,7 @@ const DigitalMarketingLanding = () => {
             className="text-lg text-white"
             style={{ fontFamily: "Satoshi-Black" }}
           >
-            Key Projects
+            OUR SERVICES
           </p>
         </div>
       </div>
@@ -197,7 +194,7 @@ const DigitalMarketingLanding = () => {
           width: "100vw",
         }}
       >
-        <div className="container mx-auto px-4 text-center">
+        {/* <div className="container mx-auto px-4 text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               "a.png",
@@ -217,7 +214,8 @@ const DigitalMarketingLanding = () => {
               />
             ))}
           </div>
-        </div>
+        </div> */}
+        <ServicesSection/>
       </div>
 
       {/* Share Button (Fixed) */}
